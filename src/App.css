@@ -1,11 +1,3 @@
-/* $primary-color: #b11adc;
-$animation-duration: 0.4s;
-
-@mixin label-active() {
-  font-size: 0.75rem;
-  transform: translateY(-14px);
-}*/
-
 .form-field {
   display: block;
 }
@@ -13,23 +5,6 @@ $animation-duration: 0.4s;
   color: #b11adc;
   font-size: 0.75rem;
 }
-/* &--is-active {
-  .form-field__control {
-    &::after {
-      border-bottom: 2px solid $primary-color;
-      transform: scaleX(150);
-    }
-  }
-  .form-field__label {
-    color: #b11adc;
-    @include label-active();
-  }
-}
-&--is-filled {
-  .form-field__label {
-    @include label-active();
-  }
-} */
 .form-field__label {
   display: block;
   font-size: 1.2rem;
@@ -50,7 +25,6 @@ $animation-duration: 0.4s;
 }
 
 .form-field__control {
-  /* background: #eee; */
   border-radius: 8px 8px 0 0;
   overflow: hidden;
   position: relative;
