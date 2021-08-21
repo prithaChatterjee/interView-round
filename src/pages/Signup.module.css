@@ -1,0 +1,140 @@
+body {
+    /* background-image: linear-gradient(to right, #b11adc, rgba(255, 0, 221, 0)); */
+  text-align: center;
+ font-family: 'Noto Sans', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.multistep{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    position: relative;
+}
+.multistep_ripple{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 0.5px;
+    background: rgb(190, 190, 190);
+}
+
+.multistep button{
+    overflow: hidden;
+    outline: 0;
+    cursor: pointer;
+    position: relative;
+    box-sizing: content-box;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    height: 72px;
+    overflow: hidden;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.multistep button:hover{
+  background-color: rgb(235, 233, 233);
+}
+
+.multistep button div{
+    margin-right: 8px;
+    background: rgba(0,0,0,.54);
+    color: white;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1{
+  font-weight:400;
+  padding-top:0;
+  margin-top:0;
+  font-family: 'Roboto Slab', serif;
+}
+
+.svg_form_time {
+  height: 15px;
+  max-width: 80%;
+  margin: 40px auto 20px;
+  display: block;
+}
+
+.svg_form_time circle,
+.svg_form_time rect {
+  fill: white;
+}
+
+.button {
+  background: rgb(237, 40, 70);
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: inline-block;
+  margin: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  box-shadow:0px 2px 5px rgb(0,0,0,0.5);
+}
+
+.disabled {
+  display:none;
+}
+
+section {
+  padding: 2rem ;
+  max-width: 600px;
+  margin: 30px auto;
+  background:white;
+  background:rgba(255,255,255,0.9);
+  backdrop-filter:blur(10px);
+  box-shadow:0px 2px 10px rgba(0,0,0,0.3);
+  border-radius:5px;
+  /* transform: none; */
+  /* transition:transform 0.2s ease-in-out; */
+  /* transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+input {
+  width: 100%;
+  margin: 7px 0px;
+  display: inline-block;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 1em;
+  font-family:inherit;
+  background:white;
+}
+
+p{
+  text-align:justify;
+  margin-bottom:1rem;
+}
+
+.donePage{
+  margin: 40px;
+  justify-content: start;
+}
+.donePage > div{
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}

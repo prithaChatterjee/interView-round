@@ -1,38 +1,117 @@
-.App {
+/* $primary-color: #b11adc;
+$animation-duration: 0.4s;
+
+@mixin label-active() {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}*/
+
+.form-field {
+  display: block;
+}
+.form-field__label {
+  color: #b11adc;
+  font-size: 0.75rem;
+}
+/* &--is-active {
+  .form-field__control {
+    &::after {
+      border-bottom: 2px solid $primary-color;
+      transform: scaleX(150);
+    }
+  }
+  .form-field__label {
+    color: #b11adc;
+    @include label-active();
+  }
+}
+&--is-filled {
+  .form-field__label {
+    @include label-active();
+  }
+} */
+.form-field__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  margin-left: 10px;
+  padding: 18px 10px 0 ;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+}
+
+.active{
+  transform: translateY(-15px);
+    font-size: 12px;
+    background: white;
+}
+
+.form-field__control {
+  /* background: #eee; */
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.form-field__control::after {
+  border-bottom: 2px solid blue;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0);
+  transition: all 0.4s;
+  width: 1%;
+}
+.form-field__input,
+.form-field__textarea {
+  appearance: none;
+  background: transparent;
+  border: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 1rem;
+  margin-top: 10px;
+  outline: 0;
+  padding: 10px 12px 10px 12px;
+  width: 100%;
+  border-radius: 5px;
+}
+.form-field__input:focus{
+  border-color: #b11adc;
+}
+.form-field__textarea {
+  height: 150px;
+}
+
+.profileButton{
   text-align: center;
+  border-radius: .25rem;
+  background: #b11adc;
+  border: 1px solid #b11adc;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  box-shadow:0px 1px 5px rgb(0,0,0,0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profileButton:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form_control{
+  margin-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.errorText{
+  color: red;
+  font-size: 0.875rem;
+  margin: 5px;
 }

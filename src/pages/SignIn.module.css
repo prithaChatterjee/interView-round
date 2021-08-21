@@ -1,0 +1,42 @@
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #b11adc, rgba(255, 0, 221, 0));
+}
+
+.signupBg{
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.headerComment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.headerComment h4{
+    margin: 0;
+}
+
+.headerComment span{
+    font-size: 0.875rem;
+}
+
+.formControl{
+    margin-bottom: 1rem;
+}
+
+
+.gotosignup{
+    color: rgb(128, 126, 126);
+    font-size: 0.875rem;
+    text-align: center;
+    margin: 1rem;
+}
